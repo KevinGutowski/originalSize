@@ -1,0 +1,26 @@
+{
+  "author" : "Kevin Gutowski",
+  "icon": "icon.png",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "Set to Original Size",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.kevingutowski.originalSize"
+    }
+  ],
+  "menu" : {
+    "title" : "Set to Original Size",
+    "items" : [
+      "com.kevingutowski.originalSize"
+    ],
+    "isRoot": true
+  },
+  "identifier" : "com.kevingutowski.originalSize",
+  "version" : "1.0",
+  "description" : "A way to assign a keyboard shortcut to quickly set symbol instances to their masters' size.",
+  "authorEmail" : "kskiviolin@gmail.com",
+  "name" : "Set to Original Size"
+}

@@ -1,0 +1,12 @@
+          var onRun = function(context) {
+          let sketch = require('sketch')
+let document = sketch.getSelectedDocument()
+let selection = document.selectedLayers.layers
+
+var symbolInstances = selection.filter(layer => layer.type == "SymbolInstance")
+
+symbolInstances.forEach(symbolInstance => {
+  symbolInstance.sketchObject.resetSizeToMaster()
+})
+          };
+          
